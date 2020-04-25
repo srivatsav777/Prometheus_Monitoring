@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: monitoring-pod
+spec:
+   containers:
+   - name: monitoring-container1
+     image: monitor
+     ports:
+     - containerPort: 9100

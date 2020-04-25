@@ -1,0 +1,11 @@
+[Unit]
+Description=Node Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+ExecStart=/home/centos/node_exporter/node_exporter  --collector.textfile.directory=/var/lib/prometheus-dropzone
+
+[Install]
+WantedBy=multi-user.target
