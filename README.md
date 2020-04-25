@@ -1,2 +1,3 @@
 # Prometheus_Monitoring
-Node exporter prometheus docker setup
+checks.py contains the script to check the respones of urls and output it to metrics.prom
+
